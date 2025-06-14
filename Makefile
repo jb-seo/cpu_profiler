@@ -5,7 +5,7 @@ TARGET = cpu_profiler
 all: $(TARGET)
 
 $(TARGET): cpu_profiler.c
-	$(CC) $(CFLAGS) -o $@ $<
+	$(CC) $(CFLAGS) -o $@ $< -lm
 
 clean:
 	rm -f $(TARGET)
